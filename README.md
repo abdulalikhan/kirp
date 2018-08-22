@@ -1,3 +1,3 @@
-# kirp
 ![Logo](https://image.ibb.co/fAFoqz/logo.png)
-Kirp is a smart Whatsapp marketing bot.
+# What's Kirp?
+Kirp is a smart Whatsapp marketing bot written in Python. It can be configured to send advertisement messages to Whatsapp groups and users at set time intervals.
