@@ -4,6 +4,6 @@ Kirp is a smart Whatsapp marketing bot written in Python. It can be configured t
 
 # Prerequisites
 In order to run Kirp, your system must have the following programs/packages installed:
--> Python
--> Selenium Web Driver
--> Google Chrome
+1. Python
+2. Selenium Web Driver
+3. Google Chrome
