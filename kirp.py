@@ -7,7 +7,7 @@ print('####   # #    # #    #')
 print('#  #   # #####  #####')  
 print('#   #  # #   #  #')      
 print('#    # # #    # #')
-print("                 v1.0")
+print("                 v1.1")
 print('The Smart Whatsapp Marketing Bot')
 print('Coded by Abdul Ali Khan')
 
@@ -15,7 +15,7 @@ print('Coded by Abdul Ali Khan')
 # To hide all errors from the user, set log level to 3.
 chrome_options = Options()
 chrome_options.add_argument("log-level=3")
-driver = webdriver.Chrome(chrome_options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 driver.get('https://web.whatsapp.com/')
 
 # The name of the user or group to send messages to
@@ -40,7 +40,7 @@ input('Please scan the QR code and then hit enter.')
 user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
 user.click()
 
-msg_box = driver.find_element_by_class_name('_2S1VP')
+msg_box = driver.find_element_by_class_name('_3u328')
 start_time = time.time()
 done = False
 i = 1
@@ -49,7 +49,7 @@ while done == False:
 	elapsed = current_time - start_time
 	while (i<=count) and (elapsed>=(interval_mins*60)):
 		msg_box.send_keys(msg)
-		button = driver.find_element_by_xpath("(//div[@class='weEq5'])[2]").click()
+		button = driver.find_element_by_xpath("(//div[@class='hnQHL'])[2]").click()
 		try:
 			button.click()
 		except AttributeError as e:
