@@ -7,7 +7,7 @@ print('####   # #    # #    #')
 print('#  #   # #####  #####')  
 print('#   #  # #   #  #')      
 print('#    # # #    # #')
-print("                 v1.1")
+print("                 v1.2")
 print('The Smart Whatsapp Marketing Bot')
 print('Coded by Abdul Ali Khan')
 
@@ -40,7 +40,7 @@ input('Please scan the QR code and then hit enter.')
 user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
 user.click()
 
-msg_box = driver.find_element_by_class_name('_3u328')
+msg_box = driver.find_element_by_class_name('_3uMse')
 start_time = time.time()
 done = False
 i = 1
@@ -49,7 +49,7 @@ while done == False:
 	elapsed = current_time - start_time
 	while (i<=count) and (elapsed>=(interval_mins*60)):
 		msg_box.send_keys(msg)
-		button = driver.find_element_by_xpath("(//div[@class='hnQHL'])[2]").click()
+		button = driver.find_element_by_xpath("(//div[@class='_1JNuk'])[2]").click()
 		try:
 			button.click()
 		except AttributeError as e:
