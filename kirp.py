@@ -49,7 +49,7 @@ while done == False:
 	elapsed = current_time - start_time
 	while (i<=count) and (elapsed>=(interval_mins*60)):
 		msg_box.send_keys(msg)
-		button = driver.find_element_by_xpath("(//div[@class='_1JNuk'])[2]").click()
+		button = driver.find_element_by_xpath("(//div[@class='_1JNuk'])[1]").click()
 		try:
 			button.click()
 		except AttributeError as e:
